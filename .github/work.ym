@@ -1,0 +1,19 @@
+- name: LeetCode Sync
+  # You may pin to the exact commit or the version.
+  # uses: joshcai/leetcode-sync@6749b872e89b3c10d213a6e599a7424584c1fa10
+  uses: joshcai/leetcode-sync@v1.7
+  with:
+    # The GitHub token
+    github-token: 
+    # The LeetCode CSRF token
+    leetcode-csrf-token: 
+    # The LeetCode session value
+    leetcode-session: 
+    # Number of seconds after an accepted solution to ignore other accepted solutions for the same problem
+    filter-duplicate-secs: # optional, default is 86400
+    # The folder to save the synced files in (relative to the top level of your repo)
+    destination-folder: # optional, default is .
+    # Adds submission percentiles and question numbers to the repo (requires an additional API call)
+    verbose: # optional, default is true
+    # How the automated commits should be prefixed
+    commit-header: # optional, default is Sync LeetCode submission
